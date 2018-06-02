@@ -1,0 +1,1 @@
+1. All connection will use $con which define in db.php

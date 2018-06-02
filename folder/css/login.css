@@ -1,0 +1,148 @@
+/* ---------------Entypo Icons--------------- */
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+form [class^="entypo-"]:before,form [class*="entypo-"]:before {
+	font-family: "entypo", sans-serif;
+	font-size:35px;
+	color: #8E8E8E;
+} 
+
+@font-face {
+    font-family: "Varela Rounds";
+    src:url(../fonts/VarelaRound-Regular.ttf);
+}
+
+/*Hide autofill CSS */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	font-family:"Varela Rounds";
+	-webkit-text-fill-color: #8E8E8E;
+    transition: background-color 50000s ease-in-out 0s;
+}
+
+body{
+	background: linear-gradient(
+				 rgba(20,20,20, .7), 
+				 rgba(20,20,20, .7)),
+				 url("../img/KL_By_yuriy-kovalev.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+.loginContainer{
+	margin-top: 160px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 390px;
+	height: 450px;
+}
+
+.loginContainer h5{
+	font-family: "Varela Rounds",sans-serif;
+    font-size: 38px;    
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+	color:#8E8E8E;
+}
+
+.loginContainer form {
+	padding:10px;
+	background-color: rgba(63,63,63,0.85);
+	width: 100%;
+    border-radius: 10px;
+}
+
+.div_username, .div_password{
+	display: inline-block;
+	width: 100%;
+    border-bottom: 1px solid #8E8E8E;
+    padding: 29px 0;
+}
+
+.div_username span, .div_password span{
+	text-indent:5px;
+	float:left;
+	height:52px;
+	width:10%;
+}
+
+.div_username input, .div_password input{
+	font-size: 20px;
+    color: #8E8E8E;
+    line-height: 1.2;
+    display: block;
+    width: 85%;
+    height: 50px;
+    background: transparent;
+	border:none;
+	outline: none;
+	margin:0;
+	float:right;
+}
+
+.div_submit input {
+	margin:0;   
+	font-size: 20px;
+    color: #8E8E8E;
+    display: block;
+	width:100%;
+    background: transparent;
+	border:none;
+	outline: none;
+	margin:0;
+	height:70px;	
+}
+
+.div_username:hover,
+.div_password:hover,
+.div_username:hover [class*="entypo-"]:before,
+.div_password:hover [class*="entypo-"]:before,
+.div_username:hover input::-webkit-input-placeholder,
+.div_password:hover input::-webkit-input-placeholder{
+	color:#665600;
+	border-bottom-color: #665600;
+	transition-delay: 0.5s;
+	transition: all 0.8s;	
+}
+
+.div_username input:focus,
+.div_password input:focus{
+	color:#665600;
+}
+
+.div_submit input:hover{
+	color:#665600;
+	font:bold;
+	font-size:25px;
+	transition-delay: 0.5s;
+	transition: all 0.8s;
+	cursor:pointer;
+}
+
+/* Viewport device width */
+@media only screen and (max-width: 1023px) { 
+    /* For Tablet: width between 480-1023px*/
+    body {
+        width: auto;
+    }
+	.loginContainer{
+		width: 55%;
+	}
+}
+@media only screen and (max-width: 480px) { 
+    /* For mobile phones:  width less than 480 px */
+    body, .loginContainer {
+        width: auto;
+		padding-right:10px;
+    }
+}
+@media only screen and (min-width: 1024px) { 
+    /* For Desktop: width more than 1024px */
+	    body {
+        width: auto;
+    }
+}
